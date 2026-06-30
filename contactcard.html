@@ -1,0 +1,120 @@
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> ABC Company Contact Card</title>
+
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #726e6e;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #750080;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        z-index: 1000;
+    }
+
+    .profile-card {
+        position: relative;
+        width: 80%;
+        height: 260px;
+        margin: 100px auto;
+        background-color: white;
+        border: 2px solid #ccc;
+        padding: 20px;
+        overflow: auto;
+    }
+
+    .profile-img {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        border-radius: 10px;
+        border: 2px solid #0e0d0d;
+    }
+
+    .details {
+        margin-right: 240px;
+        text-align: center;
+    }
+
+
+    .contact-info {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 180px;
+        text-align: center;
+        border-left: 3px solid #004080;
+        padding-left: 15px;
+        background-color: #eaf4ff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .contact-info h3 {
+        margin-top: 0;
+        color: #282d31;
+    }
+
+    .clear {
+        clear: both;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    Company Contact Card
+</div>
+
+<div class="profile-card">
+
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAwYCB//EADUQAAICAQIEAwYFAgcAAAAAAAABAgMRBAUSITFRBkFhEyIycaGxI0KBkdHB8BQWQ1JTgpL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa7bq6Yud04QguspywgNgKi/wAS7RQ2nrYTa/405fVEePi/aJSx7W1Lu6ngC/BG0Wu0uur49JqK7UuvC+nzXkSQAAAAAAAAAAAAAAAAABA3zXPbdq1GrSTlCPuJ+cm8L6sCr8T+I1ti/wANpOGWrkstvmq16+pwmq1eo1ljs1V07Z95vOPl2PF1ll9s7bpudk3mUn1bNYAGTAG3T326a6N2nslXZHpKLwzrdu8a4UIbjp2+9tT+vCcfCMrJqFcXKT6KPNmbap0zddsJQmusZLDQH13TairVUwu09kbKprMZRfJm04DwPuc9Pr/8DOX4Woy4p/lmln6pfY79AAAAAAAAAAAAAAA5/wActrYZ487YZ/c6AovGuP8AL1+f90Mf+kBxG17RbuMJzjZGuEXjLWcstIeF4f6msk/SNePuyd4er4NooeOc+KT/AHf9EiyAp6/Dmij8crZ/OSX2RJq2bbqucdLBvvJuX3ZPAHiuuFUcVVwgu0Ukiq8R6BanSPUQX41Ky8fmj5r+/UuDDiprhksprDA4rYJcO9aGXX8aP3Pqx8v8O6eU/EOlpfWFrcv+uX/Q+oAAAAAAAAAAAAAAA5fxhc79nurUeddsW8c8pPH8HUFFrqX7SyFkcqWcryaYEPbIez2/TQ7VR+xJPEI8EVCK92KwvkZywPQPOWOb/YDOTKPHPsFxAVXhypU73uGslHKrlKEPWTf8fc7WmftKoTxjiSeDnqa1H3IRxxSb5Lq2zoaYuFUIvqopAewAAAAAAAAAAAAAgbpHMIS9cE882Vwsjw2RUl2YFCCTr6lXdmKxFrkRgAAAAGYRc5KMereEBI26KepTx8KbLc11U11fBBJ45tGwAAAAAAAAAAAAAAAADTqaFfXwvr+V9mUuV5NP5F9ZJQg5SeEllnLUWOtvs3zAlgwmmsoz0AEvafZ2W2y6yrwl+pW3W8nCHV9WS9gkoW2wbXvJY/TP8gXgAAAAAAAAAAAAAAAANc7a4fHOK+bI124QjyqTk+75IDxuly9n7FPm+cvRFLwkucnZKUpfE+prcQNPDgNNm3hHCBq4TdpZOq1TXVGOE9RWAL+qcbIKcHyZ7KfS6qVHutKUG8480WFespn+fhfaXICQDCalzTT+RkAAAAAAGG8GSDudrjCNa5cXV+gDUa+MXw0rifd9CFZqLbPim8dk8I1AAAAD5GiGronqXp+PhsxlRly4l3Xc2TTl7qeE+rIuu2zT62j2dvEpJ8UJxfOEu6AnY/ccJyct63LY7npNcoapJKVc3LDa8nn9PM8vxlqPLR1L5zYHV2zrqrlZbNQhHm5SeEjxRfXfBTr4sNZXFHDa7lFtuh1m6zhrt4nmr4qdOvh9G/7yXvsuF5g2mvIDaB9ABmMpReYyafoyTVr7YfH769epFAF1RqIXxzB8/NPqjcUNVkqpqceqL2LTimujQGQAAK3dvjrfowAIIAAAAAAAOW8cVQxpb8e/lw/TqctXFTshB9JSSYAH1GEFCEYRWIxWEuyRkAAAAAAAPoy+rWK4r0QAHoAAf//Z"
+         alt="Employee"
+         class="profile-img">
+
+    <div class="details">
+        <h2>John Doe</h2>
+        <h4> software developer</h4>
+
+        <p>
+            John Doe is an experienced software engineer with expertise in
+            web development and application design. He enjoys solving
+            technical challenges and building user-friendly applications.
+            He works closely with development teams to deliver high-quality
+            software solutions.
+        </p>
+    </div>
+
+    <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p>📞 +911234567890</p>
+        <p>✉ johnjoe@company.com</p>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+</body>
+</html>
+</body>
+</html>
