@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Blog Section</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+    }
+
+    .blog-section{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .blog-container{
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .blog-card{
+        width: 300px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    h2{
+        text-align: center;
+        color: darkblue;
+    }
+
+    img[src$="learning.jpg"]{
+        width: 100%;
+        height: 180px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    img[src$="onlinelearning.jpg"]{
+        width: 100%;
+        height: 180px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    a[href^="https"]{
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    @media (max-width:600px){
+
+        .blog-container{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .blog-card{
+            width: 90%;
+        }
+
+        h2{
+            font-size: 24px;
+        }
+
+        h3{
+            font-size: 20px;
+        }
+
+        p,a{
+            font-size: 14px;
+        }
+    }
+
+
+    @media (orientation:portrait){
+
+        .blog-section{
+            background-color: lightyellow;
+        }
+
+    }
+
+</style>
+
+</head>
+<bo>
+
+<div class="blog-section">
+
+<h2>Featured Blog Section</h2>
+
+<div class="blog-container">
+
+<div class="blog-card">
+
+<img src="learning.jpg"
+alt="Learning Skills">
+
+<h3>Learn a New Skill Every Month</h3>
+
+<p>
+Developing a new skill every month is a great way to improve your confidence,
+creativity, and career opportunities. Whether it's coding, cooking, photography,
+or learning a new language, every skill adds value to your personal growth.
+</p>
+
+<a href="https://example.com">Read More</a>
+
+</div>
+
+<div class="blog-card">
+
+<img src="onlinelearning.jpg"
+alt="Online Learning">
+
+<h3>The Power of Continuous Learning</h3>
+
+<p>
+Continuous learning helps you stay updated with changing technologies and
+improves problem-solving abilities. Reading books, taking online courses,
+and practicing daily can help you achieve your goals faster.
+</p>
+
+<a href="https://example.org">Read More</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
